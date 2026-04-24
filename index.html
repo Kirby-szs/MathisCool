@@ -108,9 +108,8 @@
         const subject = encodeURIComponent("Order Request: " + name);
         const body = encodeURIComponent(
             "Hello!\n\nI wanna buy:\n" +
-            name + " for (" + price + ")\n\n" +
-            "We can meet on this date: ___________+\n"
-            "at this place: ____________ Near school"
+            name + "  (" + price + ")\n\n" +
+            "We can meet on this date: ___________ At this time __________, At this place near school ______________+\n"
         );
 
         window.location.href = `mailto:${yourEmail}?subject=${subject}&body=${body}`;
