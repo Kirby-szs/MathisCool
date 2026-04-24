@@ -28,7 +28,7 @@
         background: white;
         margin: 15px;
         padding: 15px;
-        border-radius: 10px;
+        border-radius: 17px;
         width: 250px;
         box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         text-align: center;
@@ -46,8 +46,8 @@
     }
 
     button {
-        background: 7BE0BB;
-        color: green;
+        background: green;
+        color: white;
         border: none;
         padding: 10px;
         border-radius: 5px;
@@ -79,9 +79,9 @@
     <!-- PRODUCT 2 -->
     <div class="product">
         <img src="https://i5.walmartimages.com/seo/Nee-Doh-Nice-Cube-Squish-Toy-Ages-3-Pink-1ct_5afb3ee9-981a-4c5a-8c01-b3d0ee1f7885.c68d46c5c0971097fe22cae4acb4cb94.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt="Product">
-        <h3>Nee Doh</h3>
-        <p class="price">TBD</p>
-        <button onclick="buyItem('Another Item', '$20')">Buy</button>
+        <h3>Squishy Toy</h3>
+        <p class="price">$5-7</p>
+        <button onclick="buyItem('Nee Doh', '$20')">Buy</button>
     </div>
 
 </div>
@@ -95,7 +95,7 @@
         const body = encodeURIComponent(
             "Hello,\n\nI would like to buy:\n" +
             name + " (" + price + ")\n\n" +
-            "We can meet on this date ___________-\n"
+            "We can meet on this date: ___________-\n"
         );
 
         window.location.href = `mailto:${yourEmail}?subject=${subject}&body=${body}`;
