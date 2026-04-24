@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>My Shop</title>
+<title>MathIsFun</title>
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -46,7 +46,7 @@
     }
 
     button {
-        background: #28a745;
+        background: 7BE0BB;
         color: white;
         border: none;
         padding: 10px;
@@ -62,8 +62,8 @@
 <body>
 
 <header>
-    <h1>My Shop</h1>
-    <p>Edit products easily</p>
+    <h1>My Store</h1>
+    <p> Buy Things</p>
 </header>
 
 <div class="container">
@@ -95,7 +95,7 @@
         const body = encodeURIComponent(
             "Hello,\n\nI would like to buy:\n" +
             name + " (" + price + ")\n\n" +
-            "Please let me know next steps.\n"
+            "We can meet on this date ___________-\n"
         );
 
         window.location.href = `mailto:${yourEmail}?subject=${subject}&body=${body}`;
