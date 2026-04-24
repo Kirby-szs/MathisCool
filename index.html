@@ -11,7 +11,7 @@
     }
 
     header {
-        background: #333;
+        background: #ff6b6b;
         color: white;
         padding: 15px;
         text-align: center;
@@ -81,14 +81,21 @@
         <img src="https://i.ebayimg.com/images/g/cGsAAeSwU65oOh0M/s-l400.jpg" alt="Product">
         <h3>Squishy Toy</h3>
         <p class="price">$5-7</p>
-        <button onclick="buyItem('Nee Doh', '5-7')">Buy</button>
+        <button onclick="buyItem('Nee Doh', '$5-7')">Buy</button>
     </div>
 
      <div class="product">
         <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Fidget_spinner_red%2C_cropped.jpg" alt="Product">
         <h3>Fidget Spinner</h3>
         <p class="price">$2-3</p>
-        <button onclick="buyItem('Fidget Spinner', '2-3')">Buy</button>
+        <button onclick="buyItem('Fidget Spinner', '$2-3')">Buy</button>
+    </div>
+
+    <div class="product">
+        <img src="https://i.ebayimg.com/images/g/lAAAAeSwIOlo1YmP/s-l300.jpg" alt="Product">
+        <h3>10 Resin Animals</h3>
+        <p class="price">$2</p>
+        <button onclick="buyItem('10 Resin Animals', '$2')">Buy</button>
     </div>
 
 </div>
@@ -100,9 +107,10 @@
     function buyItem(name, price) {
         const subject = encodeURIComponent("Order Request: " + name);
         const body = encodeURIComponent(
-            "Hello,\n\nI would like to buy:\n" +
-            name + " (" + price + ")\n\n" +
+            "Hello!\n\nI wanna buy:\n" +
+            name + " for (" + price + ")\n\n" +
             "We can meet on this date: ___________-\n"
+            "at this place: ____________ Near school"
         );
 
         window.location.href = `mailto:${yourEmail}?subject=${subject}&body=${body}`;
